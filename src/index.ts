@@ -1,4 +1,3 @@
 // @floken-io/designer — 自研 SVG 画布 + 中国式审批配置面板
-// 骨架占位：完整需求见 流程引擎包文档/02-包需求-floken-designer.md
-// 施工入口：M6（v1.1+，GA 之后）；v1.0 不含设计器（Q20）。
+// 骨架占位：尚未实现，目前只导出包标识常量。
 export const PACKAGE = '@floken-io/designer' as const;

@@ -1,23 +1,25 @@
 # @floken-io/designer
 
-自研 SVG 流程画布 + 中国式审批配置面板（仿钉钉配置器 → n8n 式自由画布）。
+> ⚠️ **开发中，尚未发布到 npm。**
 
-> 当前为骨架占位，实现见 `流程引擎包文档/02-包需求-floken-designer.md`。
+自研 SVG 流程画布 + 中国式审批配置面板。
 
-## 硬约束（★）
+## 设计目标
 
-- **零画布库依赖**：不依赖 bpmn-js / Vue Flow / React Flow / LogicFlow / X6（Q19）。
-- **零 UI 框架依赖**：不依赖 Vue / React / Element Plus；只出 **SVG 字符串 + 契约**（选中元素 + schema + onChange），宿主用自己的框架渲染（NFR-D8）。
-- 只依赖 `@floken-io/moddle`；`@floken-io/feel/./editor` 为可选 peer（表达式编辑器）。
+- **零画布库依赖**：不引入 bpmn-js / Vue Flow / React Flow / LogicFlow / X6
+- **零 UI 框架依赖**：不引入 Vue / React / Element Plus；只输出 **SVG 字符串 + 契约**（选中元素 + schema + onChange），宿主用自己的框架渲染
+- 只依赖 [`@floken-io/moddle`](https://www.npmjs.com/package/@floken-io/moddle)；[`@floken-io/feel`](https://www.npmjs.com/package/@floken-io/feel) 为可选 peer（表达式编辑器用其 `./editor` 子入口）
 
-## 开发
+## 相关包
 
-```bash
-pnpm install
-pnpm build
-pnpm verify
-```
+| 包 | 用途 |
+|---|---|
+| [`@floken-io/feel`](https://www.npmjs.com/package/@floken-io/feel) | FEEL 表达式语言 |
+| [`@floken-io/moddle`](https://www.npmjs.com/package/@floken-io/moddle) | BPMN 2.0 模型与 XML 转换 |
+| [`@floken-io/dmn`](https://www.npmjs.com/package/@floken-io/dmn) | DMN 1.5 决策引擎 |
+| `@floken-io/engine` | 流程内核与审批动作（开发中） |
+| `@floken-io/designer` | 流程画布与审批配置面板（本包） |
 
-## 排期
+## 许可证
 
-M6 / v1.1+（GA 之后）。v1.0 GA 不含可视化设计器。
+[Apache-2.0](./LICENSE)
