@@ -12,5 +12,5 @@ export default defineConfig({
   splitting: true,
   treeshake: true,
   clean: true,
-  external: ['temporal-polyfill', '@floken/moddle', '@floken/feel'],
+  external: ['temporal-polyfill', '@floken-io/moddle', '@floken-io/feel'],
 });

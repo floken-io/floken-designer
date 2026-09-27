@@ -1,4 +1,4 @@
-# @floken/designer
+# @floken-io/designer
 
 自研 SVG 流程画布 + 中国式审批配置面板（仿钉钉配置器 → n8n 式自由画布）。
 
@@ -8,7 +8,7 @@
 
 - **零画布库依赖**：不依赖 bpmn-js / Vue Flow / React Flow / LogicFlow / X6（Q19）。
 - **零 UI 框架依赖**：不依赖 Vue / React / Element Plus；只出 **SVG 字符串 + 契约**（选中元素 + schema + onChange），宿主用自己的框架渲染（NFR-D8）。
-- 只依赖 `@floken/moddle`；`@floken/feel/./editor` 为可选 peer（表达式编辑器）。
+- 只依赖 `@floken-io/moddle`；`@floken-io/feel/./editor` 为可选 peer（表达式编辑器）。
 
 ## 开发
 

@@ -192,10 +192,10 @@ try {
   else ok('check:deps', '无禁用 UI/画布库（NFR-D8/D9）');
 
   // feel 必须是 peer + optional（designer 与 engine 互不依赖）
-  const feel = pkg.peerDependencies?.['@floken/feel'];
-  const optional = pkg.peerDependenciesMeta?.['@floken/feel']?.optional === true;
-  if (!feel || !optional) bad('check:deps', '@floken/feel 必须是 peer + optional');
-  else ok('check:deps', `@floken/feel peer(optional): ${feel}`);
+  const feel = pkg.peerDependencies?.['@floken-io/feel'];
+  const optional = pkg.peerDependenciesMeta?.['@floken-io/feel']?.optional === true;
+  if (!feel || !optional) bad('check:deps', '@floken-io/feel 必须是 peer + optional');
+  else ok('check:deps', `@floken-io/feel peer(optional): ${feel}`);
 } catch (e) {
   bad('check:deps', '读取 package.json 失败: ' + (e.message || e));
 }

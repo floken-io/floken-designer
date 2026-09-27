@@ -1,8 +1,8 @@
 import { describe, it, expect } from 'vitest';
 import { PACKAGE } from '../src/index';
 
-describe('@floken/designer smoke', () => {
+describe('@floken-io/designer smoke', () => {
   it('exposes package name', () => {
-    expect(PACKAGE).toBe('@floken/designer');
+    expect(PACKAGE).toBe('@floken-io/designer');
   });
 });
