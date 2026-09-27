@@ -1,5 +1,5 @@
 {
-  "name": "floken-designer",
+  "name": "@floken/designer",
   "version": "0.0.0",
   "description": "Self-built SVG process designer + Chinese-style approval config panel for floken",
   "repository": { "type": "git", "url": "git+https://github.com/floken-io/floken-designer.git" },
@@ -29,13 +29,13 @@
     "prepublishOnly": "npm run build && npm run verify"
   },
   "dependencies": {
-    "floken-moddle": ">=0.0.0 <1.0.0"
+    "@floken/moddle": ">=0.0.0 <1.0.0"
   },
   "peerDependencies": {
-    "floken-feel": ">=0.0.0 <1.0.0"
+    "@floken/feel": ">=0.0.0 <1.0.0"
   },
   "peerDependenciesMeta": {
-    "floken-feel": { "optional": true }
+    "@floken/feel": { "optional": true }
   },
   "devDependencies": {
     "@types/node": "^22.20.4",
